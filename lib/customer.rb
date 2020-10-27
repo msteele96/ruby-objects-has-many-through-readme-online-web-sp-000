@@ -9,6 +9,10 @@ class Customer
     @@all << self
   end
 
+  def new_meal(waiter, total, tip=0)
+    Meal.new(water, self, total, tip)
+  end
+
   def self.all
     @@all
   end
